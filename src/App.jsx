@@ -103,11 +103,11 @@ function App() {
 
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="bg-[#25ADE7] h-[45%] w-2/4 max-w-[300px] mx-auto p-4 border-2 border-black rounded-3xl">
-        <div className="mt-4 rounded-xl h-16 bg-[#1c576e] flex justify-center items-center border-2 border-black">
+      <div className="bg-[#25ADE7] h-[22rem] w-[22rem] md:h-[28rem] md:w-[24rem] xl:h-[28rem] xl:w-[28rem] mx-auto p-4 border-2 border-black rounded-3xl">
+        <div className="mt-4 rounded-xl h-16 md:h-24 bg-[#1c576e] flex justify-center items-center border-2 border-black">
           <input
             type="number"
-            className="w-[95%] h-12 border-2 border-black bg-[#A1B4C2] text-black text-3xl text-right p-2"
+            className="w-[95%] h-12 md:h-16 md:text-4xl border-2 border-black bg-[#A1B4C2] text-black text-3xl text-right p-2"
             name="input"
             value={inputState}
           />
@@ -116,7 +116,7 @@ function App() {
         <div className="bg-[#C1C1C1] mt-3 h-[70%] border-2 border-black">
           <div className="grid grid-cols-4 gap-2 p-2 text-[#F4FAFC] font-bold text-md">
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num7"
               id="num7"
               onClick={mostrarInput}
@@ -125,7 +125,7 @@ function App() {
               7
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num8"
               id="num8"
               onClick={mostrarInput}
@@ -134,7 +134,7 @@ function App() {
               8
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num9"
               id="num9"
               onClick={mostrarInput}
@@ -142,11 +142,11 @@ function App() {
             >
               9
             </button>
-            <button className="bg-[#F5641E] border-2 border-black" name="del" id="del" onClick={borrar} readOnly>
+            <button className="bg-[#F5641E] h-8 text-lg md:h-12 md:text-xl border-2 border-black" name="del" id="del" onClick={borrar} readOnly>
               DEL
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num4"
               id="num4"
               onClick={mostrarInput}
@@ -155,7 +155,7 @@ function App() {
               4
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num5"
               id="num5"
               onClick={mostrarInput}
@@ -164,7 +164,7 @@ function App() {
               5
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num6"
               id="num6"
               onClick={mostrarInput}
@@ -172,11 +172,11 @@ function App() {
             >
               6
             </button>
-            <button className="bg-[#888888] border-2 border-black" name="mas" id="mas" onClick={sumar} readOnly>
+            <button className="bg-[#888888] h-8 text-lg md:h-12 md:text-xl border-2 border-black" name="mas" id="mas" onClick={sumar} readOnly>
               +
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num1"
               id="num1"
               onClick={mostrarInput}
@@ -185,7 +185,7 @@ function App() {
               1
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num2"
               id="num2"
               onClick={mostrarInput}
@@ -194,7 +194,7 @@ function App() {
               2
             </button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num3"
               id="num3"
               onClick={mostrarInput}
@@ -202,12 +202,12 @@ function App() {
             >
               3
             </button>
-            <button className="bg-[#888888] border-2 border-black" name="menos" id="menos" onClick={restar} readOnly>
+            <button className="bg-[#888888] h-8 text-lg md:h-12 md:text-xl border-2 border-black" name="menos" id="menos" onClick={restar} readOnly>
               -
             </button>
             <button className=""></button>
             <button
-              className="bg-[#586876] border-2 border-black"
+              className="bg-[#586876] h-8 text-lg md:h-12 md:text-xl border-2 border-black"
               name="num0"
               id="num0"
               onClick={mostrarInput}
@@ -215,17 +215,17 @@ function App() {
             >
               0
             </button>
-            <button className="bg-[#888888] border-2 border-black" name="entre" id="entre" onClick={dividir} readOnly>
+            <button className="bg-[#888888] h-8 text-lg md:h-12 md:text-xl border-2 border-black" name="entre" id="entre" onClick={dividir} readOnly>
               /
             </button>
-            <button className="bg-[#888888] border-2 border-black" name="por" id="por" onClick={multiplicar} readOnly>
+            <button className="bg-[#888888] h-8 text-lg md:h-12 md:text-xl border-2 border-black" name="por" id="por" onClick={multiplicar} readOnly>
               *
             </button>
 
-            <button className="bg-[#F5641E] border-2 border-black col-span-2" onClick={reset}>
+            <button className="bg-[#F5641E] h-8 text-lg md:h-12 md:text-xl border-2 border-black col-span-2" onClick={reset}>
               RESET
             </button>
-            <button className="bg-[#888888] border-2 border-black col-span-2" onClick={simboloIgual} readOnly>
+            <button className="bg-[#888888] h-8 text-lg md:h-12 md:text-xl border-2 border-black col-span-2" onClick={simboloIgual} readOnly>
               =
             </button>
           </div>
